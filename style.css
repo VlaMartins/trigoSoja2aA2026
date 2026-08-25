@@ -1,1 +1,71 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body{
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: beige;
+    color: darkgreen;
+}
+
+.cabecalho{
+    background-color: #d2ddbe;
+    color: darkgreen;
+    display: flex;                               /* deixa o conteudo flex p adaptar a varios tipos de tela */
+    justify-content: space-between;             /*espaço entre uma coisa e outra */
+    align-items: center;                        /*alinhamento*/
+    gap:20px;                                   /* so funciona se usar com display flex e é o espaço "como se fosse" um padding */
+    padding: 12px 20px;
+    border-radius: 5px;                         /* arredonda os cantos */
+}
+
+.cabecalho-marca{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.cabecalho-imagem{
+    width: 150px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.cabecalho-subtitulo{
+    font-size: 14px;
+    color: #9f7f40;
+}
+
+.cabecalho-titulo{
+    color:#414c2f;
+}
+
+.cabecalho-lista{
+    list-style: none;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+}
+
+.cabecalho-lista-item{
+    display: block;
+}
+
+.cabecalho a{
+    color: darkgreen;
+    font-family: Calibri, sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 6px 8px;
+    border-radius: 4px;
+}

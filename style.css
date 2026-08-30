@@ -63,7 +63,7 @@ body{
 }
 
 .cabecalho a{
-    color:  #19240f;
+    color: darkgreen;
     font-family: Calibri, sans-serif;
     font-size: 20px;
     text-decoration: none;
@@ -98,7 +98,7 @@ body{
 }
 
 .cabecalho a:hover {
-    background-color: #d5e1be;
+    background-color: #dbe0d1;
     color: #19240f; /* verde-escuro */
 }
 

@@ -12,7 +12,7 @@ body{
     line-height: 1.6;
     background-color: beige;
     color: darkgreen;
-    padding: clamp(6px, 2vw, 16px);
+    padding: clamp(6px, 2vw, 16px); /*clamp(mínimo, ideal, máximo) - 2VW = 2% da tela / viewport width */
 }
 
 

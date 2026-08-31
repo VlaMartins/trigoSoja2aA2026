@@ -83,6 +83,48 @@ body{
     color: #2e431c;
 }
 
-.secao{
+/* xxxxxxxxxxxxxxxxxx 01/09 xxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+/* Seções com texto e imagens */
+.secao {
     max-width: 1200px;
+    margin: 0 auto 2em;
+    padding: 18px;
+    display: flex;
+    gap: 22px;
+    background-color: #FFFEF9;
+    border-radius: 5px;
+    box-shadow: 8px 8px 18px #2E431C2E;
+}
+
+.texto {
+    flex: 1;
+    align-self: center;
+    padding: 0 20px;
+    max-width: 70ch;
+}
+
+.texto h2 {
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.texto p {
+    line-height: 1.8;
+    margin-top: 1em;
+    text-align: left;
+}
+
+.imagem {
+    flex: 1;
+    text-align: center;
+    display: grid;
+    gap: 10px;
+}
+
+.imagem img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 8px;
 }

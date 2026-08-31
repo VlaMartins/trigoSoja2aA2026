@@ -1,3 +1,6 @@
+/* TEMA CLARO */
+
+/* todos elementos e corpo da página */
 *{
     margin:0;
     padding: 0;
@@ -9,8 +12,11 @@ body{
     line-height: 1.6;
     background-color: beige;
     color: darkgreen;
+    padding: clamp(6px, 2vw, 16px); /*clamp(mínimo, ideal, máximo) - 2VW = 2% da tela / viewport width */
 }
 
+
+/* INICIO DO CABECALHO */
 .cabecalho{
     background-color: #d2ddbe;
     color: darkgreen;
@@ -57,7 +63,7 @@ body{
 }
 
 .cabecalho a{
-    color: darkgreen;
+    color: #19240f;
     font-family: Calibri, sans-serif;
     font-size: 20px;
     text-decoration: none;

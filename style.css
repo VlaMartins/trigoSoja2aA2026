@@ -159,3 +159,34 @@ body{
     object-fit: cover;
     border-radius: 8px;
 }
+
+/* secao contato */
+.fale-conosco h2, 
+.fale-conosco > p{
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.fale-conosco form{
+    display: flex;
+    flex-direction: column;
+}
+
+.fale-conosco label{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #52702f;
+    font-weight: bold;
+}
+
+.fale-conosco input,
+.fale-conosco textarea{
+    padding: 10px;
+    border: 1px solid #d2ddbe;
+    border-radius: 4px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+
+

@@ -61,6 +61,35 @@
                 <img src="img/soja2.jpg" alt="Plantação de trigo">
             </div>
         </section>
+
+        /* SEÇÃO TRIGO - CONFERIR EM 08/09 */
+<!-- HTML SECAO FORMULARIO -->
+
+<section class="fale-conosco" id="contato">
+<h2>Contato</h2>
+<p>Preencha os campos abaixo para entrar em contato.</p>
+
+<form id="formulario-contato" action="https://formsubmit.co/ajax/vladismara@gmail.com&quot; method="post">
+<input type="hidden" name="_subject" value="Nova mensagem do site Trigo e Soja">
+<input type="hidden" name="_template" value="table">
+
+<label for="nome">Nome:</label>
+<input type="text" id="nome" name="Nome" placeholder="Digite seu nome completo" required>
+
+<label for="telefone">Telefone:</label>
+<input type="tel" id="telefone" name="Telefone" placeholder="(99) 9 9 999-9999" maxlength="16" required>
+
+<label for="email">E-mail:</label>
+<input type="email" id="email" name="email" placeholder="exemplo@email.com" required>
+
+<label for="mensagem">Mensagem:</label>
+<textarea id="mensagem" name="Mensagem" rows="6" placeholder="Escreva sua mensagem aqui!" required></textarea>
+
+<button type="submit">Enviar</button>
+</form>
+
+<p id="resposta-formulario" class="aviso-formulario" aria-live="polite"></p>
+</section>
         
 
 

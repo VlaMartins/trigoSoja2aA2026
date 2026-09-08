@@ -1,6 +1,6 @@
 /* TEMA CLARO */
 
-/* todos elementos e corpo da página */
+/* TODOS ELEMENTOS E CORPO DA PÁGINA (sofrerão esses efeitos) */
 *{
     margin:0;
     padding: 0;
@@ -20,12 +20,12 @@ body{
 .cabecalho{
     background-color: #d2ddbe;
     color: darkgreen;
-    display: flex;                               /* deixa o conteudo flex p adaptar a varios tipos de tela */
-    justify-content: space-between;             /*espaço entre uma coisa e outra */
-    align-items: center;                        /*alinhamento*/
-    gap:20px;                                   /* so funciona se usar com display flex e é o espaço "como se fosse" um padding */
+    display: flex;                     /* deixa o conteudo flex p adaptar a varios tipos de tela */
+    justify-content: space-between;    /*espaço entre uma coisa e outra */
+    align-items: center;               /*alinhamento*/
+    gap:20px;                          /* so funciona se usar com display flex e é o espaço "como se fosse" um padding */
     padding: 12px 20px;
-    border-radius: 5px;                         /* arredonda os cantos */
+    border-radius: 5px;               /* arredonda os cantos */
 }
 
 .cabecalho-marca{

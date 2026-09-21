@@ -1,76 +1,82 @@
 /* TEMA CLARO */
 
 /* TODOS ELEMENTOS E CORPO DA PÁGINA (sofrerão esses efeitos) */
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: beige;
     color: darkgreen;
-    padding: clamp(6px, 2vw, 16px); /* clamp(mínimo, ideal, máximo) - 2VW = 2% da tela / viewport width */
+    padding: clamp(6px, 2vw, 16px);
+    /* clamp(mínimo, ideal, máximo) - 2VW = 2% da tela / viewport width */
 }
 
 
 /* INICIO DO CABECALHO */
-.cabecalho{
+.cabecalho {
     background-color: #d2ddbe;
     color: darkgreen;
-    display: flex;                     /* deixa o conteudo flex p adaptar a varios tipos de tela */
-    justify-content: space-between;    /*espaço entre uma coisa e outra */
-    align-items: center;               /*alinhamento*/
-    gap:20px;                          /* so funciona se usar com display flex e é o espaço "como se fosse" um padding */
+    display: flex;
+    /* deixa o conteudo flex p adaptar a varios tipos de tela */
+    justify-content: space-between;
+    /*espaço entre uma coisa e outra */
+    align-items: center;
+    /*alinhamento*/
+    gap: 20px;
+    /* so funciona se usar com display flex e é o espaço "como se fosse" um padding */
     padding: 12px 20px;
-    border-radius: 5px;               /* arredonda os cantos */
+    border-radius: 5px;
+    /* arredonda os cantos */
 }
 
-.cabecalho-marca{
+.cabecalho-marca {
     display: flex;
     align-items: center;
     gap: 12px;
 }
 
-.cabecalho-imagem{
+.cabecalho-imagem {
     width: 150px;
     height: 90px;
     object-fit: cover;
     border-radius: 5px;
 }
 
-.cabecalho-subtitulo{
+.cabecalho-subtitulo {
     font-size: 14px;
     color: #9f7f40;
 }
 
-.cabecalho-titulo{
-    color:#414c2f;
+.cabecalho-titulo {
+    color: #414c2f;
     font-size: clamp (34px, 5vw, 58px);
     color: #52702f;
 }
 
-.cabecalho-lista{
+.cabecalho-lista {
     list-style: none;
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 8px;
 }
 
-.cabecalho-lista-item{
+.cabecalho-lista-item {
     display: block;
 }
 
-.cabecalho a{
+.cabecalho a {
     color: #19240f;
     font-family: Calibri, sans-serif;
     font-size: 20px;
     text-decoration: none;
 
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     gap: 6px;
@@ -79,12 +85,12 @@ body{
 }
 
 /* falta inserir: 08/09 */
-.cabecalho a:hover{
-    background-color: #EBF1E0; 
+.cabecalho a:hover {
+    background-color: #EBF1E0;
     color: #2e431c;
 }
 
-.botao-tema{
+.botao-tema {
     border: none;
     border-radius: 4px;
     padding: 8px 10px;
@@ -95,20 +101,20 @@ body{
     cursor: pointer;
 }
 
-.botao-tema:hover{
+.botao-tema:hover {
     background-color: #2e431c;
 }
 
 /*ate aqui */
 /*INICIO DA NOVA SEÇÃO ABAIXO DO CABEÇALHO */
-.descricao{
-    text-align:center;
+.descricao {
+    text-align: center;
     margin: 2em 0;
     text-shadow: 2px 2px 5px #2e431c2e;
 }
 
-.descricao h2, 
-.fale-conosco h2{
+.descricao h2,
+.fale-conosco h2 {
     font-size: clamp(28px, 4vw, 44px);
     line-height: 1.2;
     color: #2e431c;
@@ -153,7 +159,8 @@ body{
     gap: 10px;
 }
 
-.imagem img { /*as img que fazem parte da classe imagem */
+.imagem img {
+    /*as img que fazem parte da classe imagem */
     width: 100%;
     height: 260px;
     object-fit: cover;
@@ -161,18 +168,18 @@ body{
 }
 
 /* secao contato */
-.fale-conosco h2, 
-.fale-conosco > p{
+.fale-conosco h2,
+.fale-conosco>p {
     margin-bottom: 15px;
     text-align: center;
 }
 
-.fale-conosco form{
+.fale-conosco form {
     display: flex;
     flex-direction: column;
 }
 
-.fale-conosco label{
+.fale-conosco label {
     margin-top: 10px;
     margin-bottom: 5px;
     color: #52702f;
@@ -180,7 +187,7 @@ body{
 }
 
 .fale-conosco input,
-.fale-conosco textarea{
+.fale-conosco textarea {
     padding: 10px;
     border: 1px solid #d2ddbe;
     border-radius: 4px;
@@ -191,95 +198,103 @@ body{
 
 /*14/09 - TEMA ESCURO */
 
-body.tema-escuro .cabecalho a {
-color: #FFFFFF;
-}
 body.tema-escuro {
-background-color: #1C2218;
-color: #E8EFDA;
+    background-color: #1C2218;
+    color: #E8EFDA;
+} 
+
+body.tema-escuro .cabecalho a {
+    color: #FFFFFF;
 }
 
 body.tema-escuro .cabecalho {
-background-color: #304127;
-color: #E8EFDA;
+    background-color: #304127;
+    color: #E8EFDA;
 }
+
 body.tema-escuro .cabecalho-subtitulo {
-color: #DEB25B;
+    color: #DEB25B;
 }
 
 body.tema-escuro .cabecalho-titulo,
 body.tema-escuro .fale-conosco label {
-color: #AECC7E;
+    color: #AECC7E;
 }
+
 body.tema-escuro .cabecalho a {
-color: #FFFFFF;
+    color: #FFFFFF;
 }
+
 body.tema-escuro .cabecalho a:hover {
-background-color: #405231;
-color: #E8EFDA;
+    background-color: #405231;
+    color: #E8EFDA;
 }
+
 body.tema-escuro .botao-tema,
 body.tema-escuro .fale-conosco button,
 body.tema-escuro .voltar {
-color: #FFFFFF;
-background-color: #AECC7E;
+    color: #FFFFFF;
+    background-color: #AECC7E;
 }
+
 body.tema-escuro .botao-tema:hover,
 body.tema-escuro .fale-conosco button:hover,
 body.tema-escuro .voltar:hover {
-background-color: #E8EFDA;
-color: #1C2218;
+    background-color: #E8EFDA;
+    color: #1C2218;
 }
+
 body.tema-escuro .descricao h2,
 body.tema-escuro .fale-conosco h2,
 body.tema-escuro footer {
-color: #E8EFDA;
+    color: #E8EFDA;
 }
+
 body.tema-escuro .secao,
 body.tema-escuro .fale-conosco {
-background-color: #262F22;
-box-shadow: 8px 8px 18px #00000059;
+    background-color: #262F22;
+    box-shadow: 8px 8px 18px #00000059;
 }
 
 body.tema-escuro .fale-conosco input,
 body.tema-escuro .fale-conosco textarea {
-border: 1px solid #304127;
-background-color: #FFFFFF;
-color: #1C2218;
+    border: 1px solid #304127;
+    background-color: #FFFFFF;
+    color: #1C2218;
 }
 
 body.tema-escuro .fale-conosco input::placeholder,
 body.tema-escuro .fale-conosco textarea::placeholder,
 body.tema-escuro .fale-conosco .aviso-formulario {
-color: #CBD4BE;
+    color: #CBD4BE;
 }
 
 body.tema-escuro .fale-conosco input:focus,
 body.tema-escuro .fale-conosco textarea:focus {
-outline: 2px solid #DEB25B;
+    outline: 2px solid #DEB25B;
 }
 
 body.tema-escuro .fale-conosco .sucesso {
-color: #8FD397;
+    color: #8FD397;
 }
 
 body.tema-escuro .fale-conosco .erro {
-color: #E88474;
+    color: #E88474;
 }
 
 body.tema-escuro footer {
-background-color: #304127;
+    background-color: #304127;
 }
 
 body.tema-escuro .fale-conosco button:disabled {
-background-color: #696F64;
-color: #FFFFFF;
+    background-color: #696F64;
+    color: #FFFFFF;
 }
 
 body.tema-escuro .descricao {
-text-shadow: 2px 2px 5px #00000059;
+    text-shadow: 2px 2px 5px #00000059;
 }
 
 body.tema-escuro .voltar {
-box-shadow: 0 3px 9px #00000073;
+    box-shadow: 0 3px 9px #00000073;
 }

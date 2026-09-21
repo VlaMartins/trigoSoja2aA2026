@@ -189,4 +189,97 @@ body{
 }
 
 
+/*14/09 - TEMA ESCURO */
 
+body.tema-escuro .cabecalho a {
+color: #FFFFFF;
+}
+body.tema-escuro {
+background-color: #1C2218;
+color: #E8EFDA;
+}
+
+body.tema-escuro .cabecalho {
+background-color: #304127;
+color: #E8EFDA;
+}
+body.tema-escuro .cabecalho-subtitulo {
+color: #DEB25B;
+}
+
+body.tema-escuro .cabecalho-titulo,
+body.tema-escuro .fale-conosco label {
+color: #AECC7E;
+}
+body.tema-escuro .cabecalho a {
+color: #FFFFFF;
+}
+body.tema-escuro .cabecalho a:hover {
+background-color: #405231;
+color: #E8EFDA;
+}
+body.tema-escuro .botao-tema,
+body.tema-escuro .fale-conosco button,
+body.tema-escuro .voltar {
+color: #FFFFFF;
+background-color: #AECC7E;
+}
+body.tema-escuro .botao-tema:hover,
+body.tema-escuro .fale-conosco button:hover,
+body.tema-escuro .voltar:hover {
+background-color: #E8EFDA;
+color: #1C2218;
+}
+body.tema-escuro .descricao h2,
+body.tema-escuro .fale-conosco h2,
+body.tema-escuro footer {
+color: #E8EFDA;
+}
+body.tema-escuro .secao,
+body.tema-escuro .fale-conosco {
+background-color: #262F22;
+box-shadow: 8px 8px 18px #00000059;
+}
+
+body.tema-escuro .fale-conosco input,
+body.tema-escuro .fale-conosco textarea {
+border: 1px solid #304127;
+background-color: #FFFFFF;
+color: #1C2218;
+}
+
+body.tema-escuro .fale-conosco input::placeholder,
+body.tema-escuro .fale-conosco textarea::placeholder,
+body.tema-escuro .fale-conosco .aviso-formulario {
+color: #CBD4BE;
+}
+
+body.tema-escuro .fale-conosco input:focus,
+body.tema-escuro .fale-conosco textarea:focus {
+outline: 2px solid #DEB25B;
+}
+
+body.tema-escuro .fale-conosco .sucesso {
+color: #8FD397;
+}
+
+body.tema-escuro .fale-conosco .erro {
+color: #E88474;
+}
+
+body.tema-escuro footer {
+background-color: #304127;
+}
+
+body.tema-escuro .fale-conosco button:disabled {
+background-color: #696F64;
+color: #FFFFFF;
+}
+
+body.tema-escuro .descricao {
+text-shadow: 2px 2px 5px #00000059;
+}
+
+body.tema-escuro .voltar {
+box-shadow: 0 3px 9px #00000073;
+}

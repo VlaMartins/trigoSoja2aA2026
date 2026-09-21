@@ -168,8 +168,17 @@ body {
 }
 
 /* secao contato */
+.fale-conosco{ /*  22/09  */
+    max-width: 600px;
+    margin: 0 auto 2em;
+    padding: clamp(18px, 4vw, 28px);
+    background-color: #FFFEF9;
+    border-radius: 5px;
+    box-shadow: 8px 18px #2e431c2e;
+}
+
 .fale-conosco h2,
-.fale-conosco>p {
+.fale-conosco > p {
     margin-bottom: 15px;
     text-align: center;
 }
@@ -194,6 +203,60 @@ body {
     font-family: Arial, sans-serif;
     font-size: 16px;
 }
+
+/* 22/09 */
+.fale-conosco input::placeholder,
+.fale-conosco textarea::placeholder {
+    color: #5C614C;
+}
+
+.fale-conosco textarea {
+    resize: vertical;
+}
+
+.fale-conosco input:focus,
+.fale-conosco textarea:focus {
+    outline: 2px solid #C5973E;
+}
+
+.fale-conosco button {
+    margin-top: 20px;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    color: #FFFFFF;
+    background-color: #52702F;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.fale-conosco button:hover {
+    background-color: #2E431C;
+}
+
+.fale-conosco button:disabled {
+    background-color: #808080;
+    cursor: wait;
+}
+
+.fale-conosco .aviso-formulario {
+    margin-top: 12px;
+    margin-bottom: 0;
+    color: #5C614C;
+    font-size: 13px;
+}
+
+.fale-conosco .sucesso {
+    color: #236730;
+    font-weight: bold;
+}
+
+.fale-conosco .erro {
+    color: #912E23;
+    font-weight: bold;
+}
+
+
 
 
 /*14/09 - TEMA ESCURO */

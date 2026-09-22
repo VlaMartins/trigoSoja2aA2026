@@ -71,19 +71,17 @@
                 body: new FormData(formulario),
                 headers: { "Accept": "application/json" }
             })
-                .then(function (retorno) {
+               .then(function (retorno) {
                     return retorno.json();
                 })
                 .then(function (dados) {
                     if (dados.success === "false") {
                         throw new Error();
                     }
-
-                    resposta.textContent = "Mensagem enviada com sucesso!";
-                    resposta.className = "aviso-formulario sucesso";
-                    formulario.reset();
-                })
-        })
+            resposta.textContent = "Mensagem enviada com sucesso!";
+            resposta.className = "aviso-formulario sucesso";
+            formulario.reset();
+})
             .catch(function () {
                 resposta.textContent = "Não foi possível enviar. Verifique a internet e tente novamente.";
                 resposta.className = "aviso-formulario erro";
